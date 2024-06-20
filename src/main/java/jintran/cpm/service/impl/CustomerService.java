@@ -1,2 +1,4 @@
-package jintran.cpm.impl;public class CustomerService {
+package jintran.cpm.service.impl;
+
+public class CustomerService {
 }

@@ -1,2 +1,4 @@
-package jintran.cpm.service;public interface IGenerateService {
+package jintran.cpm.service;
+
+public interface IGenerateService {
 }

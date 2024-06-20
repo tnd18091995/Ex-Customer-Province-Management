@@ -1,2 +1,4 @@
-package jintran.cpm.service;public interface ICustomerService {
+package jintran.cpm.service;
+
+public interface ICustomerService {
 }

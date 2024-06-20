@@ -1,2 +1,4 @@
-package jintran.cpm.configuration;public class AppInit {
+package jintran.cpm.configuration;
+
+public class AppInit {
 }

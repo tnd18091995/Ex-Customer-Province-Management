@@ -1,2 +1,4 @@
-package jintran.cpm.formatter;public class ProvinceFormatter {
+package jintran.cpm.formatter;
+
+public class ProvinceFormatter {
 }

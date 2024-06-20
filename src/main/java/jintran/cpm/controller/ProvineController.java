@@ -1,2 +1,4 @@
-package jintran.cpm.controller;public class ProvineController {
+package jintran.cpm.controller;
+
+public class ProvineController {
 }

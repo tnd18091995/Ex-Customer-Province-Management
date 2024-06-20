@@ -1,2 +1,4 @@
-package jintran.cpm.service;public class IProvinceService {
+package jintran.cpm.service;
+
+public class IProvinceService {
 }
