@@ -1,4 +1,8 @@
 package jintran.cpm.service;
 
-public interface ICustomerService {
+import jintran.cpm.model.Customer;
+import jintran.cpm.model.Province;
+
+public interface ICustomerService extends IGenerateService<Customer> {
+    Iterable<Customer> findAllByProvince(Province province);
 }
