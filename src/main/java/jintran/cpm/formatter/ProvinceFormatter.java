@@ -8,6 +8,7 @@ import org.springframework.stereotype.Component;
 
 import java.text.ParseException;
 import java.util.Locale;
+import java.util.Optional;
 
 @Component
 public class ProvinceFormatter implements Formatter<Province> {
@@ -18,11 +19,22 @@ public class ProvinceFormatter implements Formatter<Province> {
     }
     @Override
     public Province parse(String text, Locale locale) throws ParseException {
-        return null;
+        try {
+            Long id = Long.parseLong(text);
+            Optional<Province> provinceOptional = provinceService.findById(id);
+            if (provinceOptional.isPresent()) {
+                return provinceOptional.get();
+            } else {
+                throw new ParseException("Province not found for id: " + text, 0);
+            }
+        } catch (NumberFormatException e) {
+            throw new ParseException("Invalid province id: " + text, 0);
+        }
     }
+
 
     @Override
     public String print(Province object, Locale locale) {
-        return null;
+        return "[" + object.getId() + ", " +object.getName() + "]";
     }
 }
